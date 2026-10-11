@@ -2,163 +2,181 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VOID CRAFT | Minecraft</title>
-  <style>
-    * { box-sizing: border-box; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOID CRAFT | Minecraft</title>
 
-    body {
-      margin: 0;
-      font-family: Tahoma, Arial, sans-serif;
-      background: #080510;
-      color: white;
-      text-align: center;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    header {
-      padding: 18px;
-      background: #120b20;
-      border-bottom: 1px solid #8b35ff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #080510;
+  color: white;
+  text-align: center;
+}
 
-    header strong {
-      color: #bd83ff;
-      font-size: 21px;
-    }
+header {
+  padding: 12px 16px;
+  background: #120b20;
+  border-bottom: 1px solid #8b35ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    button {
-      background: #7c2cff;
-      color: white;
-      border: 0;
-      border-radius: 9px;
-      padding: 11px 16px;
-      font-size: 15px;
-      cursor: pointer;
-    }
+header strong {
+  color: #bd83ff;
+  font-size: 20px;
+}
 
-    #menu {
-      display: none;
-      background: #171024;
-      padding: 15px;
-    }
+.menu-btn {
+  background: #7c2cff;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
 
-    #menu a {
-      display: block;
-      color: white;
-      padding: 12px;
-      text-decoration: none;
-    }
+#menu {
+  display: none;
+  background: #171024;
+  padding: 8px;
+  border-bottom: 1px solid #8b35ff;
+}
 
-    .hero {
-      padding: 75px 18px 60px;
-      background: radial-gradient(ellipse at top, #40206b, #080510 70%);
-    }
+#menu a {
+  display: block;
+  color: white;
+  padding: 10px;
+  margin: 4px auto;
+  max-width: 250px;
+  text-decoration: none;
+  border-radius: 7px;
+}
 
-    .hero h1 {
-      font-size: 42px;
-      color: #c49aff;
-      text-shadow: 0 0 22px #812cff;
-      margin-bottom: 10px;
-    }
+#menu a:hover {
+  background: #54209a;
+}
 
-    .hero p {
-      color: #d5c9e6;
-      line-height: 2;
-    }
+.hero {
+  padding: 70px 18px 55px;
+  background: radial-gradient(ellipse at top, #40206b, #080510 70%);
+}
 
-    .card {
-      margin: 20px auto;
-      padding: 24px;
-      max-width: 420px;
-      width: 90%;
-      background: #140e20;
-      border: 1px solid #58308a;
-      border-radius: 16px;
-    }
+.hero h1 {
+  font-size: 40px;
+  color: #c49aff;
+  text-shadow: 0 0 22px #812cff;
+}
 
-    .card h2 { color: #c49aff; }
+.hero p {
+  color: #d5c9e6;
+  line-height: 2;
+}
 
-    .link {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 12px 20px;
-      background: #7c2cff;
-      color: white;
-      text-decoration: none;
-      border-radius: 9px;
-    }
+.card {
+  margin: 20px auto;
+  padding: 24px;
+  max-width: 420px;
+  width: 90%;
+  background: #140e20;
+  border: 1px solid #58308a;
+  border-radius: 16px;
+}
 
-    footer {
-      padding: 25px;
-      color: #9989ad;
-      font-size: 13px;
-    }
-  </style>
+.card h2 {
+  color: #c49aff;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #7c2cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+}
+
+footer {
+  padding: 25px;
+  color: #9989ad;
+  font-size: 13px;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <strong>VOID CRAFT</strong>
-    <button onclick="toggleMenu()">☰ منو</button>
-  </header>
+<header>
+  <strong>VOID CRAFT</strong>
+  <button class="menu-btn" onclick="toggleMenu()">☰ منو</button>
+</header>
 
-  <nav id="menu">
-    <a href="#about">درباره کانال</a>
-    <a href="https://www.youtube.com/@BehzadVoid"
-       target="_blank">یوتیوب</a>
-    <a href="https://rubika.ir/VoidCraftBD"
-       target="_blank">روبیکا</a>
-    <a href="#telegram">تلگرام — SOON</a>
-  </nav>
+<nav id="menu">
+  <a href="https://kbehzad835-bit.github.io/Void-Craft-YouTube/">
+    ▶ سایت یوتیوب
+  </a>
 
-  <section class="hero">
-    <h1>VOID CRAFT</h1>
-    <p>به دنیای ماینکرفت خوش اومدی!</p>
-    <p>جایی برای گیمینگ، ماجراجویی و لحظات خفن.</p>
-    <a class="link"
-       href="https://www.youtube.com/@BehzadVoid"
-       target="_blank">ورود به کانال یوتیوب</a>
-  </section>
+  <a href="https://kbehzad835-bit.github.io/Void-Craft-Rubika/">
+    💜 سایت روبیکا
+  </a>
 
-  <section class="card" id="about">
-    <h2>🎮 درباره VOID CRAFT</h2>
-    <p>اینجا دنیای اختصاصی ماینکرفت ماست!</p>
-  </section>
+  <a href="#telegram">✈ تلگرام — SOON</a>
+</nav>
 
-  <section class="card">
-    <h2>▶️ یوتیوب</h2>
-    <p>ویدیوهای کانال رو تماشا کن.</p>
-    <a class="link"
-       href="https://www.youtube.com/@BehzadVoid"
-       target="_blank">مشاهده کانال</a>
-  </section>
+<section class="hero">
+  <h1>VOID CRAFT</h1>
+  <p>به دنیای ماینکرفت خوش اومدی!</p>
+  <p>گیمینگ، ماجراجویی و لحظات خفن 🔥</p>
+</section>
 
-  <section class="card">
-    <h2>💜 روبیکا</h2>
-    <p>به کانال روبیکا سر بزن.</p>
-    <a class="link"
-       href="https://rubika.ir/VoidCraftBD"
-       target="_blank">ورود به روبیکا</a>
-  </section>
+<section class="card">
+  <h2>🎮 درباره VOID CRAFT</h2>
+  <p>به دنیای اختصاصی ماینکرفت ما خوش اومدی!</p>
+</section>
 
-  <section class="card" id="telegram">
-    <h2>✈️ تلگرام</h2>
-    <p>به‌زودی فعال می‌شود!</p>
-  </section>
+<section class="card">
+  <h2>▶️ یوتیوب</h2>
+  <p>برای دیدن سایت اختصاصی یوتیوب کلیک کن.</p>
+  <a class="link"
+     href="https://kbehzad835-bit.github.io/Void-Craft-YouTube/">
+    ورود به سایت یوتیوب
+  </a>
+</section>
 
-  <footer>© VOID CRAFT | ساخته‌شده برای عاشقان Minecraft</footer>
+<section class="card">
+  <h2>💜 روبیکا</h2>
+  <p>برای دیدن سایت اختصاصی روبیکا کلیک کن.</p>
+  <a class="link"
+     href="https://kbehzad835-bit.github.io/Void-Craft-Rubika/">
+    ورود به سایت روبیکا
+  </a>
+</section>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display =
-        menu.style.display === "block" ? "none" : "block";
-    }
-  </script>
+<section class="card" id="telegram">
+  <h2>✈️ تلگرام</h2>
+  <p>به زودی ساخته میشود!</p>
+</section>
+
+<footer>
+  © VOID CRAFT | Minecraft Gaming
+</footer>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+
+  menu.style.display =
+    menu.style.display === "block" ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
